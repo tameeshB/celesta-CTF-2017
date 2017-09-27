@@ -1,5 +1,5 @@
-# CTF-Anwesha17
-Capture The Flag for Anwesha'17
+# CTF-Celesta17
+Capture The Flag for Celesta'18
 
 ### Todo
 

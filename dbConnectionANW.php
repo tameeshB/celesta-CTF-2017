@@ -1,8 +1,8 @@
 <?php
-define("DB_HOST2","127.0.0.1");
-define("DB_username2","root");
-define("DB_password2","");
-define("DB_database2","anwesha");
+define("DB_HOST2","linux.securedhosting.in");
+define("DB_username2","celestao");
+define("DB_password2","celest@@iitpa");
+define("DB_database2","celestao_2017");
 
 function dbConnectAnw() {
 	$con = mysqli_connect(DB_HOST2,DB_username2,DB_password2,DB_database2);

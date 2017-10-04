@@ -7,7 +7,7 @@ if(isLogin()) {
 ?>
 <!DOCTYPE html>
 <!--
-Capture The Flag hosted by Anwesha IITP 2017.
+Capture The Flag hosted by Celesta IITP 2017.
 -->
 <html>
     <head>
@@ -33,7 +33,11 @@ Capture The Flag hosted by Anwesha IITP 2017.
             data: $('#form1').serialize(),
             success: function (response) {
               alert(response);
-              cosole.log(response);
+              if(response=="Register Success" || response=="Error!, May be Already Registered" ){
+                document.getElementById('register').style.display='none';
+              }
+
+              console.log(response);
               
             }
           });
@@ -75,16 +79,16 @@ Capture The Flag hosted by Anwesha IITP 2017.
     <body>
         <div class="Site-top">
             <div class="container">
-            <h2>Capture the Flag</h2>
+            <h2>Capture the Flag @ <a href= "http://celesta.org.in" style="text-decoration: none">Celesta 2k17</a></h2>
                 <div class='register'>
                       <button onclick="document.getElementById('register').style.display='block'"  id="reg_bttn">Register</button>
                   </div>
       <div id="register" class="modal">
      <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
      <form class="modal-content animate" id="form1">      <!-- Modal Content -->
-         <label><b>Anwesha Id</b></label>
-         <input type="text" placeholder="Enter AnweshId" class="mytext" maxlength="15" style="height: 30px" name="anwid" required>
-         <label><b>Username</b></label>
+         <label><b>Celesta Id</b></label>
+         <input type="text" placeholder="Enter CelestaId" class="mytext" maxlength="15" style="height: 30px" name="anwid" required>
+         <label><b>Desired Username</b></label>
          <input type="text" placeholder="Enter Username"  maxlength="25" style="height: 30px" name="username" required>  
          <label><b>Password</b></label>
          <input type="password" placeholder="Enter Password"  style="height: 30px" name="pass" required>
@@ -98,8 +102,8 @@ Capture The Flag hosted by Anwesha IITP 2017.
       <div id="login" class="modal">
      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
      <form class="modal-content animate" id="form2">      <!-- Modal Content -->
-         <label><b>ANWID</b></label>
-         <input type="text" placeholder="ANWxxxx"  maxlength="15" style="height: 30px" name="anwid" required>
+         <label><b>Celesta ID</b></label>
+         <input type="text" placeholder="CLSTxxxx"  maxlength="15" style="height: 30px" name="anwid" required>
          <label><b>Password</b></label>
          <input type="password" placeholder="Enter Password"  style="height: 30px" name="pass" required>
          <button type="submit">Login</button>
@@ -116,7 +120,7 @@ Capture The Flag hosted by Anwesha IITP 2017.
                         <a href="index.php" style="text-decoration: none;margin-left:0"><li ><b>Home </b></li></a>
                       <a href="rules.html" style="text-decoration: none"><li><b>Rules</b></li></a>
                       <a href="leaderboard.html" style="text-decoration: none"><li><b>Leaderboard</b></li></a>
-                      <a href="https://www.facebook.com/events/343174736081160/" style="text-decoration: none"><li><b>DiscussionForum</b></li></a>
+                      <!-- <a href="https://www.facebook.com/events/343174736081160/" style="text-decoration: none"><li><b>DiscussionForum</b></li></a> -->
                     </ul>
                   </div>
                 </nav>

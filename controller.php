@@ -6,8 +6,8 @@ function canLogin($id, $pass)
 {
 	$loginAllowed = isContestTime();
 
-	if(!preg_match('/^[Aa][Nn][Ww][0-9]{4}$/',$id)) {
-		echo "Invalid Anwesha ID";
+	if(!preg_match('/^[Cc][Ll][Ss][Tt][0-9]{4}$/',$id)) {
+		echo "Invalid Celesta ID";
 		return false;
 	}
 	$con = dbConnect();
@@ -35,8 +35,8 @@ function canLogin($id, $pass)
 
 function register($username, $id, $pass)
 {
-	if(!preg_match('/^[Aa][Nn][Ww]([0-9]{4})$/',$id,$match)) {
-		echo "Invalid Anwesha ID";
+	if(!preg_match('/^[Cc][Ll][Ss][Tt]([0-9]{4})$/',$id,$match)) {
+		echo "Invalid Celesta ID";
 		return false;
 	}
 
@@ -50,7 +50,7 @@ function register($username, $id, $pass)
 	require("dbConnectionANW.php");
 	$conAnw = dbConnectAnw();
 	
-	$sql="SELECT name FROM People P join LoginTable L on L.pId=P.pId where P.pid='$anwid' and password='".sha1($pass)."' and confirm>0";
+	$sql="SELECT name FROM users where regID='$anwid' and pswd='".sha1($pass)."' ";
 	$result=mysqli_query($conAnw,$sql);
 	if($result && mysqli_num_rows($result)==1) {
 		$row=mysqli_fetch_array($result);

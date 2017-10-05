@@ -1,55 +1,21 @@
 <?php
 require('../../flagcontroller.php');
-mustLogin();
+// mustLogin();
 ?>
 <html>
-
 <head>
-	<title>Just Login</title>
-        <link rel="stylesheet" type="text/css" href="miss3.css">
+	<title>Key Login</title>
+        <link rel="stylesheet" type="text/css" href="miss2.css">
 </head>
-<body>
-	<center><h1>Login</h1>
-	<?php
-	$success =false;
-		if(isset($_POST['uname']) && isset($_POST['pwd'])) {
-			$conv = mysqli_connect(DB_HOST,'ctfdbview',"wecandoitna","ctf");
+<body style="padding:1em;">
+	<!-- <center><h1>Key Login</h1></center><br> -->
+<br>
 
-			// Check connection
-			if (mysqli_connect_errno())
-			{
-			  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-			  die();
-			}
+<center><div id="Notice" style="padding:10px;background: #FF0000;color: #FFFFFF">Leaked access key="ue9g24hygf2"</div></center>
+<br><br>
 
-			$uname = mysqli_real_escape_string($conv,$_POST['uname']);
-			$pwd = $_POST['pwd'];
+<p>
 
-			$query = "SELECT uname from m3_login where uname='$uname' and passwd='$pwd';";
-			$result = mysqli_query($conv,$query);
-			if($result) {
-				if(mysqli_num_rows($result)>0) {
-					echo "Logged In : Flag ".getFlag(3)."<br>";
-					$success=true;
-				} else {
-					echo "Invalid Credentials";
-				}
-			} else {
-				echo "Error in query <br>$query<br> ".mysqli_error($conv);
-			}
-		}
-	if(!$success){
-	?>
-
-	<form id='#' method='post'>
-		<br>
-		<input type='text' name='uname' value='admin' placeholder='Username'><br><br>
-		<input type='password' name='pwd' value='' placeholder='Password'><br><br>
-		<input type='submit' value='Login'><br>
-	</form>	
-	<?php
-	}
-	?>
-	</center>
+</p>
 </body>
 </html>

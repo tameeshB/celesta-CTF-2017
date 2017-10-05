@@ -1,3 +1,0 @@
-aa$==?$?==$bb
-cc$==?$?==$cc
-<script>alert('hi!')</script>$==?$?==$adf

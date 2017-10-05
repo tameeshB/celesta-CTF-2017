@@ -108,7 +108,7 @@ Capture The Flag hosted by Celesta IITP 2017.
         </div>
         
         <div class="body-area">
-            <center>Remember, there might be hidden questions...<br>Are you sure you read the Rules <i><b>Properly</b></i>?</center><br><br>
+            <center>Remember, there might be hidden questions...<br>Are you sure you read the Rules <i><b>Properly</b></i>?</center>
                     <div class="col-sm-6" >
                       <?php
                       for ($i=1; $i <= 6 ; $i+=2) { 

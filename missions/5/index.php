@@ -10,10 +10,10 @@ mustLogin();
 <body><br>
 	<center><h1>Bookmark share!</h1><br><br>
 <?php
-if(isset($_POST['title']) && !empty($_POST['title']) && isset($_POST['url']) && !empty($_POST['url'])){
+if(isset($_POST['title']) && !empty($_POST['title']) && isset($_POST['url']) && !empty($_POST['url']) && isset($_GET['saveto']) && $_GET['saveto']=="text_".$_SESSION['id'].".txt"){
 
 	// Open the text file
-	$f = fopen("txts/text_".$_SESSION['id'].".txt", "a");
+	$f = fopen("txts/".$_GET['saveto'], "a");
 	$text = $_POST['title']."$==?$?==$".htmlspecialchars($_POST['url'])."\n";
 	// Write text line
 	fwrite($f, $text); 
@@ -45,7 +45,7 @@ if(isset($_POST['key']) && !empty($_POST['key'])) {
 <div style="width:30%;padding:10px;color: #FFFFFF;background-color: #FF0000;">Admin approves bookmarks at hourly intervals before they get shared.</div>
 <br><br><br>
 <hr width="50%"><br>
-<form action='#' method="POST">
+<form action='index.php?saveto=<?php echo "text_".$_SESSION['id'].".txt";?>' method="POST">
 <h3>Add new Bookmark</h3><br>
 	<input type='text' name='title' placeholder='Title' autocomplete="off">
 	<input type='text' name='url' placeholder='url'>

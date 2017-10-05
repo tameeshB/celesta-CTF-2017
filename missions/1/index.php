@@ -29,7 +29,7 @@ mustLogin();
 		}
 	?><br>
 	
-Challenge running at <a href="https://goo.gl/YxPbFG" target="_blank">goo.gl/YxPbFG</a><br><br>
+Start here: <a href="https://goo.gl/YxPbFG" target="_blank">goo.gl/YxPbFG</a><br><br>
 <!-- <img src="pic.png" alt="" height="200px"> -->
 <form action="" method="POST">Enter Key:
 	<input type="text" name="key"><br><br>

@@ -12,7 +12,7 @@ mustLogin();
 	<?php
 		if(isset($_POST['key'])){
 			if($_POST['key']=="simple"){
-				echo "Flag: ".getFlag(1)."<br><a href='../missions/200'>Secret Question</a>";
+				echo "Flag: ".getFlag(1)."<br><a href='../200'>Secret Question</a>";
 				exit(1);
 			}else{
 				echo "Try again ;)";

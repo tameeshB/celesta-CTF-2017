@@ -3,29 +3,53 @@ require('../../flagcontroller.php');
 mustLogin();
 ?>
 <html>
+
 <head>
-	<title>File reader app</title>
-	<link rel="stylesheet" type="text/css" href="miss1.css">
+	<title>Just Login</title>
+        <link rel="stylesheet" type="text/css" href="miss3.css">
 </head>
-<body><center>
-<div class="cont">Hidden Question!<br><h1>Advanced file reading app</h1><br><br><br><br>
+<body>
+	<center><h1>Login</h1>
 	<?php
-		if(isset($_POST['key'])){
-			if($_POST['key']=="oijw48ywrhw2490q8u2qjl13r8g"){
-				echo "Flag: ".getFlag(200);
-				exit(1);
-			}else{
-				echo "Try again ;)";
+	$success =false;
+		if(isset($_POST['uname']) && isset($_POST['pwd'])) {
+			$conv = mysqli_connect(DB_HOST,'celestao_view',"sofigrnjs89u2&y4","celestao_ctf");
+
+			// Check connection
+			if (mysqli_connect_errno())
+			{
+			  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+			  die();
+			}
+
+			$uname = mysqli_real_escape_string($conv,$_POST['uname']);
+			$pwd = $_POST['pwd'];
+
+			$query = "SELECT uname from m3_login where uname='$uname' and passwd='$pwd';";
+			$result = mysqli_query($conv,$query);
+			if($result) {
+				if(mysqli_num_rows($result)>0) {
+					echo "Logged In : Flag ".getFlag(2)."<br>";
+					$success=true;
+				} else {
+					echo "Invalid Credentials";
+				}
+			} else {
+				echo "Error in query <br>$query<br> ".mysqli_error($conv);
 			}
 		}
-	?><br>
-	
-Challenge running at <a href="http://1.ctf.celesta.org.in/" target="_blank">1.ctf.celesta.org.in</a><br><br>
-<!-- <img src="pic.png" alt="" height="200px"> -->
-<form action="" method="POST">Enter Key:
-	<input type="text" name="key"><br><br>
-	<input type="submit" value="Submit">
-</form>
-</div></center>
+	if(!$success){
+	?>
+
+	<form id='#' method='post'>
+		<br>
+		<input type='text' name='uname' value='admin' placeholder='Username'><br><br>
+		<input type='password' name='pwd' value='' placeholder='Password'><br><br>
+		<input type='submit' value='Login'><br>
+	</form>	
+	<?php
+	}
+	?>
+	</center>
 </body>
 </html>

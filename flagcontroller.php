@@ -23,33 +23,33 @@ function getPoints($qid) {
 			break;
 		
 		case 1:
-			return 10;
-			break;
-		
-		case 2:
 			return 50;
 			break;
 		
-		case 3:
+		case 2:
 			return 60;
 			break;
 		
+		case 3:
+			return 70;
+			break;
+		
 		case 4:
-			return 120;
+			return 110;
 			break;
 		
 		case 5:
-			return 100;
+			return 110;
 			break;
 		
 		case 6:
-			return 10;
+			return 50;
 			break;
 		
 		case 10:
-			return 10;
+			return 20;
 			break;
-			
+
 		case 200:
 			return 50;
 			break;

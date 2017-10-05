@@ -30,7 +30,7 @@ mustLogin();
 	?><br>
 	
 Challenge running at <a href="http://1.ctf.celesta.org.in/" target="_blank">1.ctf.celesta.org.in</a><br><br>
-<!-- <img src="pic.png" alt="" height="200px"> -->
+Hint: <br><img src="pic.png" alt="" height="200px">
 <form action="" method="POST">Enter Key:
 	<input type="text" name="key"><br><br>
 	<input type="submit" value="Submit">

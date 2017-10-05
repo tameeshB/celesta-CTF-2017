@@ -4,7 +4,7 @@ mustLogin();
 ?>
 <!DOCTYPE html>
 <!--
-Capture The Flag hosted by Anwesha IITP 2017.
+Capture The Flag hosted by Celesta IITP 2017.
 -->
 <html>
     <head>
@@ -90,17 +90,16 @@ Capture The Flag hosted by Anwesha IITP 2017.
                   <div class="container-fluid">
                     <ul class="nav navbar-nav">
                         <a href="quest.php" style="text-decoration: none"><li ><b>Home </b></li></a>
-                      <a href="rules.html" style="text-decoration: none"><li><b>Rules</b></li></a>
+                      <a href="rules.php" style="text-decoration: none"><li><b>Rules</b></li></a>
                       <a href="leaderboard.html" style="text-decoration: none"><li><b>Leaderboard</b></li></a>
-                      <a href="https://www.facebook.com/events/343174736081160/" target="_blank"  style="text-decoration: none"><li><b>DiscussionForum</b></li></a>
+                      <!-- <a href="https://www.facebook.com/events/343174736081160/" target="_blank"  style="text-decoration: none"><li><b>DiscussionForum</b></li></a> -->
                     </ul>
                   </div>
                 </nav>
         </div>
         
         <div class="body-area">
-            <center>Programmers love Whole Number</center><br><br>
-            <center style='color:black;background-color:white'>Note : Score of Mission 7 is cleared (0000 hrs 27th Jan), Please try it again </center><br>
+            <!-- <center>Programmers love Whole Number</center><br><br> -->
                     <div class="col-sm-6" >
                       <?php
                       for ($i=1; $i <= 8 ; $i+=2) { 
@@ -124,7 +123,7 @@ Capture The Flag hosted by Anwesha IITP 2017.
             </div>
         </div>
         <div class='footer'>
-            <p>@Anwesha 2017</p>
+            <p>@Celesta 2017</p>
         </div>
     </body>
 </html>

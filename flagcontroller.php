@@ -4,6 +4,7 @@ require("dbConnection.php");
 
 function getFlags() {
 	$flags  = array();
+	$flags[10] = "sd834kssw4";
 	$flags[0] = "oea2G8Q62l";
 	$flags[1] = "pdJIp9ilXL";
 	$flags[2] = "fbXFXjX2Ps";
@@ -54,11 +55,10 @@ function getPoints($qid) {
 		case 8:
 			return 25;
 			break;
-		
-		case '5596alpha':
-			return 80;
-			break;
 
+		case 10:
+			return 10;
+			break;
 		
 		default:
 			return 0;
@@ -90,7 +90,7 @@ function getFlag($qid) {
 
 function isLogin() {
 
-	if(isset($_SESSION['id']) && preg_match('/^[Aa][Nn][Ww][0-9]{4}$/',$_SESSION['id'])) {
+	if(isset($_SESSION['id']) && preg_match('/^[Cc][Ll][Ss][Tt][0-9]{4}$/',$_SESSION['id'])) {
 		return true;
 	}
 	return false;

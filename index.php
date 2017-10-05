@@ -118,7 +118,7 @@ Capture The Flag hosted by Celesta IITP 2017.
                   <div class="container-fluid">
                     <ul class="nav navbar-nav">
                         <a href="index.php" style="text-decoration: none;margin-left:0"><li ><b>Home </b></li></a>
-                      <a href="rules.html" style="text-decoration: none"><li><b>Rules</b></li></a>
+                      <a href="rules.php" style="text-decoration: none"><li><b>Rules</b></li></a>
                       <a href="leaderboard.html" style="text-decoration: none"><li><b>Leaderboard</b></li></a>
                       <!-- <a href="https://www.facebook.com/events/343174736081160/" style="text-decoration: none"><li><b>DiscussionForum</b></li></a> -->
                     </ul>
@@ -154,7 +154,7 @@ Capture The Flag hosted by Celesta IITP 2017.
           }
           else if(stimeleft<=0) {
             msg = sectostring(etimeleft);
-            $('#timer').html("Running (Practice Mode) <br><br><br><br> Login to Continue.<br><br><br><br>CTF Ends in "+msg);
+            $('#timer').html("Contest Running<br><br><br><br> Login to Continue hacking.<br><br><br><br>CTF Ends in "+msg);
             setTimeout(function() {
               updateMsg();
             },1000);

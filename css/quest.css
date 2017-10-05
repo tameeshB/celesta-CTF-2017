@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding:0;
     overflow:auto;
-    height:100%;
+    /*height:100%;*/
 }
 
 .header .h2
@@ -82,23 +82,20 @@ header {
 }
 
 .Site-top {
-    position:relative;
     height: 60px;
     width: 100%;
-    background-color: #000000;
+background-color: #4c2e7b;
 background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-
 }
-
 .register{
     position:absolute;
     top:10px;
     right:130px;
 }
 .logout{
-    position:absolute;
-    right:40px;
-    top:10px;
+    position: absolute;
+    top: 13px;
+    right: 40px;
 }
 .container{
     position:absolute;
@@ -121,14 +118,15 @@ background-image: url("https://www.transparenttextures.com/patterns/stardust.png
 .list {
     height:60px;
     width:100%;
-background-color: #0f1c17;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
-opacity: 2.8;
+    text-align: center;
+background-color: #4527A0;
+
+opacity: 0.8;
     border-bottom: 1px solid blue;
 }
 
 .list li:hover{
-    background-color: black;
+    background-color: #5C6BC0;
 }
 
 .list li{
@@ -238,7 +236,7 @@ box-shadow: 2px 2px 2px 2px maroon;
     position: absolute;
     display: inline;
     right:    10%;
-    bottom:   10%;
+    /*bottom:   10%;*/
     font-size: 26px;
 }
 

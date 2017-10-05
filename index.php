@@ -86,6 +86,7 @@ Capture The Flag hosted by Celesta IITP 2017.
       <div id="register" class="modal">
      <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
      <form class="modal-content animate" id="form1">      <!-- Modal Content -->
+         <label >You need to register with Celesta to proceed further.<br>Register at <a href="http://celesta.org.in">celesta.org.in</a> to obtain Celesta ID and use same password and celesta ID(CLSTxxxx) here.</label>
          <label><b>Celesta Id</b></label>
          <input type="text" placeholder="Enter CelestaId" class="mytext" maxlength="15" style="height: 30px" name="anwid" required>
          <label><b>Desired Username</b></label>

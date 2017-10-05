@@ -8,7 +8,7 @@ function getFlags() {
 	$flags[0] = "oea2G8Q62l";
 	$flags[1] = "pdJIp9ilXL";
 	$flags[2] = "fbXFXjX2Ps";
-	$flags[3] = "DThfgcHIEU";
+	$flags[3] = "j63r34tjnw";
 	$flags[4] = "pihOuW0mIt";
 	$flags[5] = "i5WO1xspJr";
 	$flags[6] = "ByEj2jLuD9";
@@ -33,7 +33,7 @@ function getPoints($qid) {
 			break;
 		
 		case 3:
-			return 30;
+			return 60;
 			break;
 		
 		case 4:

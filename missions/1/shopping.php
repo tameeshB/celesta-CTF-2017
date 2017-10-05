@@ -25,11 +25,11 @@ if(isset($_POST['logout'])) {
 }
 
 if(isset($_POST['username']) && isset($_POST['passwd'])) {
-	if($_POST['username']=='john' && '8a368184fd838dbc4306156c5ba67e2e'==md5($_POST['passwd'])) {
+	if($_POST['username']=='john' && '8a368184fd838dbc4306156c5ba67e2e'==sha1($_POST['passwd'])) {
 		$isLoggedInShopping = true;
 		$isAdminShopping = true;
 		$myname = $_POST['username'];
-	} else if($_POST['username']=='marry' && '061fba5bdfc076bb7362616668de87c8'==md5($_POST['passwd'])) {
+	} else if($_POST['username']=='marry' && '3978d009748ef54ad6ef7bf851bd55491b1fe6bb'==sha1($_POST['passwd'])) {
 		$isLoggedInShopping = true;
 		$myname = $_POST['username'];
 	} else {

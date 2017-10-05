@@ -10,11 +10,11 @@ mustLogin();
 </head>
 <body>
 	<center><h1>Secure Login</h1>
-	Mission 3 is Secure, can u still get in<br>
+	<br>
 	<?php
 	$success =false;
 		if(isset($_POST['uname']) && isset($_POST['pwd'])) {
-			$conv = mysqli_connect(DB_HOST,'ctfdbview',"wecandoitna","ctf");
+			$conv = mysqli_connect(DB_HOST,'celestao_view',"sofigrnjs89u2&y4","celestao_ctf");
 
 			// Check connection
 			if (mysqli_connect_errno())
@@ -25,7 +25,7 @@ mustLogin();
 
 			//Secure
 			$uname = mysqli_real_escape_string($conv,$_POST['uname']);
-			$pwd = md5($_POST['pwd']);
+			$pwd = sha1($_POST['pwd']);
 			$query = "SELECT uname from m4_login where uname='$uname' and passwd='$pwd';";
 
 

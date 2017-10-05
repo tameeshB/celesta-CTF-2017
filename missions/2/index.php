@@ -13,7 +13,7 @@ mustLogin();
 	<?php
 	$success =false;
 		if(isset($_POST['uname']) && isset($_POST['pwd'])) {
-			$conv = mysqli_connect(DB_HOST,'ctfdbview',"wecandoitna","ctf");
+			$conv = mysqli_connect(DB_HOST,'celestao_view',"sofigrnjs89u2&y4","celestao_ctf");
 
 			// Check connection
 			if (mysqli_connect_errno())
@@ -29,7 +29,7 @@ mustLogin();
 			$result = mysqli_query($conv,$query);
 			if($result) {
 				if(mysqli_num_rows($result)>0) {
-					echo "Logged In : Flag ".getFlag(3)."<br>";
+					echo "Logged In : Flag ".getFlag(2)."<br>";
 					$success=true;
 				} else {
 					echo "Invalid Credentials";

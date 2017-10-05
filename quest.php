@@ -102,14 +102,14 @@ Capture The Flag hosted by Celesta IITP 2017.
             <!-- <center>Programmers love Whole Number</center><br><br> -->
                     <div class="col-sm-6" >
                       <?php
-                      for ($i=1; $i <= 8 ; $i+=2) { 
+                      for ($i=1; $i <= 6 ; $i+=2) { 
                         echo '<a target="_blank" href="missions/'.$i.'/"><button type="button" id="but_'.$i.'" class="left" onmouseover="this.innerHTML=\'Click ME!\'" onmouseout="this.innerHTML=\'Mission '.$i.'\'"><span> Mission '.$i.' </span></button></a>';
                       }
                       ?>
                      </div>
                     <div class="col-sm-right-6" id="right">
                         <?php
-                      for ($i=2; $i <= 8 ; $i+=2) { 
+                      for ($i=2; $i <= 6 ; $i+=2) { 
                         echo '<a target="_blank" href="missions/'.$i.'/"><button type="button" id="but_'.$i.'" class="right" onmouseover="this.innerHTML=\'Click ME!\'" onmouseout="this.innerHTML=\'Mission '.$i.'\'"><span> Mission '.$i.' </span></button></a>';
                       }
                       ?>

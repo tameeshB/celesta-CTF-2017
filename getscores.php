@@ -14,7 +14,7 @@ while($row = $result->fetch_assoc())
 $flags = getFlags();
 $returndata = array();
 foreach ($flags as $qid => $value) 
-if($qid>0 && $qid<=8) 
+if($qid>0 && $qid<=6) 
 {
 	$returndata[$qid-1][0]=getPoints($qid);
 	$returndata[$qid-1][1]=false;

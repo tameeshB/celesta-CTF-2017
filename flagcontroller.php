@@ -12,9 +12,6 @@ function getFlags() {
 	$flags[4] = "2rhOu0erIt";
 	$flags[5] = "i5WO1xspJr";
 	$flags[6] = "ByEj2jLuD9";
-	$flags[7] = "aSDsddFmas";
-	$flags[8] = "95DULO9xnH";
-	$flags['5596alpha'] = "X7V52Gl3le";
 	return $flags;	
 }
 

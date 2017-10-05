@@ -20,7 +20,7 @@ mustLogin();
 		}
 	?><br>
 	
-Challenge running at <a href="https://ctf1celesta.herokuapp.com" target="_blank">ctf1celesta.herokuapp.com</a><br><br>
+Challenge running at <a href="http://1.ctf.celesta.org.in/" target="_blank">1.ctf.celesta.org.in</a><br><br>
 <!-- <img src="pic.png" alt="" height="200px"> -->
 <form action="" method="POST">Enter Key:
 	<input type="text" name="key"><br><br>

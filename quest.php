@@ -93,7 +93,7 @@ Capture The Flag hosted by Celesta IITP 2017.
                 <button type="button" onclick="location.href='logout.php'">Logout</button>
             </div>
             <!-- adding welcome for person -->
-            </div> 
+            </div>
         <div class="list">
                 <nav class="navbar navbar-inverse">
                   <div class="container-fluid">
@@ -108,7 +108,7 @@ Capture The Flag hosted by Celesta IITP 2017.
         </div>
         
         <div class="body-area">
-            <!-- <center>Programmers love Whole Number</center><br><br> -->
+            <center>Remember, there might be hidden questions...<br>Are you sure you read the Rules <i><b>Properly</b></i>?</center><br><br>
                     <div class="col-sm-6" >
                       <?php
                       for ($i=1; $i <= 6 ; $i+=2) { 

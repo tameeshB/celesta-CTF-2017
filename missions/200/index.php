@@ -29,7 +29,7 @@ mustLogin();
 			$result = mysqli_query($conv,$query);
 			if($result) {
 				if(mysqli_num_rows($result)>0) {
-					echo "Logged In : Flag ".getFlag(2)."<br>";
+					echo "Logged In : Flag ".getFlag(200)."<br>";
 					$success=true;
 				} else {
 					echo "Invalid Credentials";

@@ -9,10 +9,10 @@ function getFlags() {
 	$flags[2] = "le824hiuef";
 	$flags[3] = "i8u48thiuq";
 	$flags[4] = "824tuih7qe";
-	$flags[5] = "84u3df24ad";
+	$flags[5] = "74u3df24ad";
 	$flags[6] = "249teworiq";
 	$flags[10] = "4u20hqef8g";
-	$flags[200] = "82h4thfhe2";
+	$flags[200] = "62h4thfhe2";
 	return $flags;	
 }
 

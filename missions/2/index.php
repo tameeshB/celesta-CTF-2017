@@ -12,7 +12,7 @@ mustLogin();
 	<?php
 		if(isset($_POST['key'])){
 			if($_POST['key']=="oijw48ywrhw2490q8u2qjl13r8g"){
-				echo "Flag: ".getFlag(200);
+				echo "Flag: ".getFlag(2);
 				exit(1);
 			}else{
 				echo "Try again ;)";

@@ -12,6 +12,7 @@ function getFlags() {
 	$flags[5] = "84u3df24ad";
 	$flags[6] = "249teworiq";
 	$flags[10] = "4u20hqef8g";
+	$flags[200] = "82h4thfhe2";
 	return $flags;	
 }
 
@@ -22,7 +23,7 @@ function getPoints($qid) {
 			break;
 		
 		case 1:
-			return 40;
+			return 10;
 			break;
 		
 		case 2:
@@ -47,6 +48,10 @@ function getPoints($qid) {
 		
 		case 10:
 			return 10;
+			break;
+			
+		case 200:
+			return 50;
 			break;
 		
 		default:

@@ -4,15 +4,15 @@ mustLogin();
 ?>
 <html>
 <head>
-	<title>Just dig in!</title>
+	<title>File reader app</title>
 	<link rel="stylesheet" type="text/css" href="miss1.css">
 </head>
 <body><center>
-<div class="cont"><br><h1>Dig in!</h1><br><br><br><br>
+<div class="cont">Hidden Question!<br><h1>Advanced file reading app</h1><br><br><br><br>
 	<?php
 		if(isset($_POST['key'])){
-			if($_POST['key']=="simple"){
-				echo "Flag: ".getFlag(1)."<br><a href='../missions/200'>Secret Question</a>";
+			if($_POST['key']=="oijw48ywrhw2490q8u2qjl13r8g"){
+				echo "Flag: ".getFlag(200);
 				exit(1);
 			}else{
 				echo "Try again ;)";
@@ -20,7 +20,7 @@ mustLogin();
 		}
 	?><br>
 	
-Challenge running at <a href="https://goo.gl/YxPbFG" target="_blank">goo.gl/YxPbFG</a><br><br>
+Challenge running at <a href="http://1.ctf.celesta.org.in/" target="_blank">1.ctf.celesta.org.in</a><br><br>
 <!-- <img src="pic.png" alt="" height="200px"> -->
 <form action="" method="POST">Enter Key:
 	<input type="text" name="key"><br><br>

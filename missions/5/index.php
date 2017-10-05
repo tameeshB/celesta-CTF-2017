@@ -58,7 +58,15 @@ if(isset($_POST['key']) && !empty($_POST['key'])) {
 		<td>Url</td>
 	</tr>
 	<?php
-		if ($handle = fopen("txts/text_".$_SESSION['id'].".txt", "r")) {
+	$filename="txts/text_".$_SESSION['id'].".txt";
+	if(isset($_GET['admin']) && isset($_GET['read'])){
+		if($_GET['admin']==1){
+			$filename="txts/text_CLST".$_GET['read'].".txt";
+			
+		}
+	}
+
+		if ($handle = fopen($filename, "r")) {
 		    while (($line = fgets($handle)) !== false) {
 		    	$dat=explode("$==?$?==$", $line);
 			echo "<tr><td>".$dat[0]."</td>";

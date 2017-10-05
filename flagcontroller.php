@@ -4,14 +4,14 @@ require("dbConnection.php");
 
 function getFlags() {
 	$flags  = array();
-	$flags[10] = "sd834kssw4";
-	$flags[0] = "oea2G8Q62l";
-	$flags[1] = "pdJIp9ilXL";
-	$flags[2] = "fb4rXjX2Ps";
-	$flags[3] = "j63r34tjnw";
-	$flags[4] = "2rhOu0erIt";
-	$flags[5] = "i5WO1xspJr";
-	$flags[6] = "ByEj2jLuD9";
+	$flags[0] = "3a57rqea2f";
+	$flags[1] = "a4df8th3a2";
+	$flags[2] = "le824hiuef";
+	$flags[3] = "i8u48thiuq";
+	$flags[4] = "824tuih7qe";
+	$flags[5] = "84u3df24ad";
+	$flags[6] = "249teworiq";
+	$flags[10] = "4u20hqef8g";
 	return $flags;	
 }
 
@@ -38,21 +38,13 @@ function getPoints($qid) {
 			break;
 		
 		case 5:
-			return 30;
+			return 100;
 			break;
 		
 		case 6:
 			return 10;
 			break;
 		
-		case 7:
-			return 25;
-			break;
-		
-		case 8:
-			return 25;
-			break;
-
 		case 10:
 			return 10;
 			break;

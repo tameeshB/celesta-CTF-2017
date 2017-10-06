@@ -1,6 +1,6 @@
 <?php
 require('flagcontroller.php');
-mustLogin();
+// mustLogin();
 ?>
 <!DOCTYPE html>
 <!--
@@ -53,7 +53,7 @@ Capture The Flag hosted by Celesta IITP 2017.
                 <li><h3>Can attempt the challenges from anywhere using any device.</h3> </li>
                 <li><h3>Use of Internet is allowed.</h3> </li>
                 <li><h3>Each problem will have different points according to its difficulty level.</h3></li>
-                <li hidden="true"><h3>Be on the lookout for hidden bonus questions. You might get an idea about it in one of the questions><br><!-- BTW, flag to mission 10 is <?php echo getFlag(10); ?> --></h3></li>
+                <li hidden="true"><h3>Be on the lookout for hidden bonus questions. You might get an idea about it in one of the questions><br><!-- BTW, flag to mission 10 is <?php //echo getFlag(10); ?> --></h3></li>
                 <li><h3>The sole discretion of choosing the contest winner lies with the contest organizers and no enquiries will be entertained regarding the winning criterion</h3></li>                
             </ul>
         </div>

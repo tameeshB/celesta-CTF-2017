@@ -1,6 +1,7 @@
 <?php
 session_start();
-if($_SESSION['id']!='1000'){
+if($_SESSION['id']!='CLST1000'){
+	// echo "not admin".$_SESSION['id'];
 	exit(1);
 }
 if(!isset($_GET['file'])){

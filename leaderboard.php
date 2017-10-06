@@ -31,7 +31,7 @@ function sortByOrder($a, $b) {
 	return +1;
 }
 usort($data,'sortByOrder');
-$size = min(15,sizeof($data));
+$size = min(20,sizeof($data));
 $ndata = array();
 for ($i=0; $i < $size; $i++) { 
 	$ndata[$i] = $data[$i];

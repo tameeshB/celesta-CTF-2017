@@ -20,6 +20,7 @@ mustLogin();
 <body>
 	<center><h1>Secure Login</h1>
 	<br>
+	Hint 1: This mission is dependent on another mission.<br>
 	<?php
 	$success =false;
 		if(isset($_POST['uname']) && isset($_POST['pwd'])) {

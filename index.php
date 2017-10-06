@@ -89,9 +89,9 @@ Capture The Flag hosted by Celesta IITP 2017.
         <div class="Site-top">
             <div class="container">
             <h2>Capture the Flag @ <a href= "http://celesta.org.in" style="text-decoration: none">Celesta 2k17</a></h2>
-                <div class='register'>
+                <!-- <div class='register'>
                       <button onclick="document.getElementById('register').style.display='block'"  id="reg_bttn">Register</button>
-                  </div>
+                  </div> -->
       <div id="register" class="modal">
      <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
      <form class="modal-content animate" id="form1">      <!-- Modal Content -->
@@ -106,8 +106,8 @@ Capture The Flag hosted by Celesta IITP 2017.
          <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
      </form>
  </div>
-                  <div class='log'>
-                      <button onclick="document.getElementById('login').style.display='block'">Login</button>
+                  <!-- <div class='log'>
+                      <button onclick="document.getElementById('login').style.display='block'">Login</butto -->n>
                   </div>
       <div id="login" class="modal">
      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>

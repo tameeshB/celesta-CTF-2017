@@ -22,7 +22,7 @@ mustLogin();
 	<?php
 	$success =false;
 		if(isset($_POST['uname']) && isset($_POST['pwd'])) {
-			$conv = mysqli_connect(DB_HOST,'celestao_view',"sofigrnjs89u2&y4","celestao_ctf");
+			$conv = mysqli_connect(DB_HOST,'user',"pswd","db");
 
 			// Check connection
 			if (mysqli_connect_errno())

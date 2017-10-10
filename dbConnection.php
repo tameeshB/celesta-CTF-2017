@@ -1,8 +1,8 @@
 <?php
-define("DB_HOST","linux.securedhosting.in");
-define("DB_username","celestao_ctf");
-define("DB_password","ctf@celest@@iitpa");
-define("DB_database","celestao_ctf");
+define("DB_HOST","mysqlhost");
+define("DB_username","DBusername");
+define("DB_password","DB_USER_password");
+define("DB_database","DBname");
 
 function dbConnect() {
 	$con = mysqli_connect(DB_HOST,DB_username,DB_password,DB_database);
